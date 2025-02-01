@@ -13,7 +13,7 @@ export default function Hero() {
           </p>
           <Link 
             href="/signup" 
-            className="inline-block bg-blue-500 hover:bg-blue-600 transition-colors px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-lg sm:text-xl font-medium"
+            className="inline-block bg-blue-500 hover:bg-blue-600 transition-colors px-6 sm:px-8 py-3 sm:py-4 rounded-[8px] text-lg sm:text-xl font-medium"
           >
             Try PerfectPath free
           </Link>

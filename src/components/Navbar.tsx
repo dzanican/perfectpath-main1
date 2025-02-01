@@ -103,10 +103,10 @@ const Navbar = () => {
 
         {/* Desktop Buttons */}
         <div className="hidden lg:flex gap-4">
-          <button className="px-6 py-3 rounded-lg bg-[#FFE492] text-[#002D61] hover:bg-[#FFD970] transition-all duration-300 hover:-translate-y-0.5">
+          <button className="px-6 py-3 rounded-[8px] bg-[#FFE492] text-[#002D61] hover:bg-[#FFD970] transition-all duration-300 hover:-translate-y-0.5">
             Login
           </button>
-          <button className="px-6 py-3 rounded-lg bg-[#4F9CF9] text-white hover:bg-[#3B82F6] transition-all duration-300 hover:-translate-y-0.5">
+          <button className="px-6 py-3 rounded-[8px] bg-[#4F9CF9] text-white hover:bg-[#3B82F6] transition-all duration-300 hover:-translate-y-0.5">
             Sign Up
           </button>
         </div>

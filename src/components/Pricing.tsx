@@ -12,7 +12,7 @@ const Pricing = () => {
 
       <div className="mt-12 space-y-8 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-6 lg:gap-8 lg:max-w-7xl lg:mx-auto px-4 lg:px-8">
         {/* Free Tier */}
-        <div className="border border-yellow-200 rounded-lg p-6 lg:p-8 h-full bg-[#FFE492]/70">
+        <div className="border-2 border-[#FFE492] rounded-2xl p-6 lg:p-8 h-full bg-white">
           <div className="flex flex-col h-full">
             <h3 className="text-2xl font-semibold text-[#043873]">Free</h3>
             <p className="mt-5 text-3xl font-bold text-[#043873]">$0</p>
@@ -92,7 +92,7 @@ const Pricing = () => {
         </div>
 
         {/* Elite Tier */}
-        <div className="border border-yellow-200 rounded-lg p-6 lg:p-8 h-full bg-[#FFE492]/70">
+        <div className="border-2 border-[#FFE492] rounded-2xl p-6 lg:p-8 h-full bg-white">
           <div className="flex flex-col h-full">
             <h3 className="text-2xl font-semibold text-[#043873]">Elite</h3>
             <p className="mt-5 text-3xl font-bold text-[#043873]">$10.00</p>
