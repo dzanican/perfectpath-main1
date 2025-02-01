@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import PerfectPathLogo from '../assets/PerfectPath NEW.png';
+import PerfectPathLogo from '@/assets/PerfectPath NEW.png';
 import { IoIosArrowDown } from "react-icons/io";
 import { useState } from 'react'
 
@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full bg-[#002D61] py-4 z-50 ">
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo Section */}
-        <div className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Image 
             src={PerfectPathLogo}
             alt="PerfectPath Logo"
@@ -19,7 +19,7 @@ const Navbar = () => {
             height={34}
           />
           <span className="text-2xl font-bold text-white">PerfectPath</span>
-        </div>
+        </Link>
 
         {/* Mobile Menu Button */}
         <button 
@@ -60,27 +60,6 @@ const Navbar = () => {
 
           <div className="relative group">
             <Link 
-              href="#resources" 
-              className="text-white hover:opacity-80 transition-opacity duration-300 flex items-center gap-1"
-            >
-              Resources
-              <IoIosArrowDown className="text-sm" />
-            </Link>
-            <div className="absolute left-0 hidden group-hover:block mt-2 w-48 bg-white rounded-lg shadow-lg">
-              <Link href="#resource1" className="block px-4 py-2 text-[#002D61] hover:bg-gray-100">
-                Resource 1
-              </Link>
-              <Link href="#resource2" className="block px-4 py-2 text-[#002D61] hover:bg-gray-100">
-                Resource 2
-              </Link>
-              <Link href="#resource3" className="block px-4 py-2 text-[#002D61] hover:bg-gray-100">
-                Resource 3
-              </Link>
-            </div>
-          </div>
-
-          <div className="relative group">
-            <Link 
               href="#pricing" 
               className="text-white hover:opacity-80 transition-opacity duration-300 flex items-center gap-1"
             >
@@ -99,6 +78,13 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
+
+          <Link 
+            href="/blog" 
+            className="text-white hover:opacity-80 transition-opacity duration-300"
+          >
+            Blog
+          </Link>
         </div>
 
         {/* Desktop Buttons */}
@@ -128,20 +114,19 @@ const Navbar = () => {
             </div>
             <div className="relative">
               <Link 
-                href="#resources" 
-                className="text-white hover:opacity-80 transition-opacity duration-300 flex items-center gap-1"
-              >
-                Resources
-                <IoIosArrowDown className="text-sm" />
-              </Link>
-            </div>
-            <div className="relative">
-              <Link 
                 href="#pricing" 
                 className="text-white hover:opacity-80 transition-opacity duration-300 flex items-center gap-1"
               >
                 Pricing
                 <IoIosArrowDown className="text-sm" />
+              </Link>
+            </div>
+            <div className="relative">
+              <Link 
+                href="/blog" 
+                className="text-white hover:opacity-80 transition-opacity duration-300"
+              >
+                Blog
               </Link>
             </div>
           </div>

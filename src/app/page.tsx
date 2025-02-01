@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Analysis from "@/components/Analysis";
 import ATS from "@/components/ATS";
-import SkillGap from "@/components/SkillGap";
+import SkillGap from "@/components/Interview Practice";
 import Pricing from "@/components/Pricing";
 import Try from "@/components/Try";
 import ReadMore from "@/components/ReadMore";

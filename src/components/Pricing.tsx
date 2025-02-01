@@ -81,7 +81,7 @@ const Pricing = () => {
                 <div className="flex-shrink-0">
                   <IoMdCheckmarkCircleOutline className="h-5 w-5 text-yellow-500 mt-1" />
                 </div>
-                <p className="ml-3 text-gray-200 text-base">Interview Prep</p>
+                <p className="ml-3 text-gray-200 text-base">120 minutes of AI interview coaching</p>
               </li>
             </ul>
 
@@ -94,9 +94,9 @@ const Pricing = () => {
         {/* Elite Tier */}
         <div className="border-2 border-[#FFE492] rounded-2xl p-6 lg:p-8 h-full bg-white">
           <div className="flex flex-col h-full">
-            <h3 className="text-2xl font-semibold text-[#043873]">Elite</h3>
-            <p className="mt-5 text-3xl font-bold text-[#043873]">$10.00</p>
-            <p className="mt-3 text-[#043873] text-lg">For those looking for a new career</p>
+            <h3 className="text-2xl font-semibold text-[#043873]">Lifetime</h3>
+            <p className="mt-5 text-3xl font-bold text-[#043873]">$150.00</p>
+            <p className="mt-3 text-[#043873] text-lg">Lifetime access to all features</p>
             
             <ul className="mt-10 space-y-5">
               <li className="flex items-start">
@@ -116,6 +116,12 @@ const Pricing = () => {
                   <IoMdCheckmarkCircleOutline className="h-5 w-5 text-[#043873] mt-1" />
                 </div>
                 <p className="ml-3 text-[#043873] text-lg">Personality & Culture Fit Analysis</p>
+              </li>
+              <li className="flex items-start">
+                <div className="flex-shrink-0">
+                  <IoMdCheckmarkCircleOutline className="h-5 w-5 text-[#043873] mt-1" />
+                </div>
+                <p className="ml-3 text-[#043873] text-lg">Unlimted AI interviewer sessions</p>
               </li>
             </ul>
 

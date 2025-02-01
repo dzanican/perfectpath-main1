@@ -35,9 +35,9 @@ const ATS = () => {
         </h1>
         <p className="text-gray-600 text-lg">
           Ensure your resume passes automated screening systems
-          with our advanced ATS analysis tools
+          with our advanced ATS analysis tools. New resumes are automatically fromatted to meet the requirements of popular screening systems.
         </p>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md transition-colors">
+        <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-[8px] transition-colors">
           Check Now
         </button>
       </div>

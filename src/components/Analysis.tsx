@@ -35,7 +35,7 @@ const Analysis = () => {
               Upload your resume to discover suitable job titles for your next career move
             </p>
             <div className="flex justify-center md:justify-start">
-              <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center gap-2 transition-colors">
+              <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-[8px] flex items-center gap-2 transition-colors">
                 Get Started
                 <svg 
                   className="w-4 h-4" 

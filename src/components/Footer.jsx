@@ -38,8 +38,7 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Resources</h3>
             <ul className="space-y-2">
               <li><Link href="/blog" className="hover:text-blue-300">Blog</Link></li>
-              <li><Link href="/guides" className="hover:text-blue-300">Guides & tutorials</Link></li>
-              <li><Link href="/help" className="hover:text-blue-300">Help center</Link></li>
+              <li><Link href="/helpcenter" className="hover:text-blue-300">Help center</Link></li>
             </ul>
           </div>
 
@@ -47,9 +46,8 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><Link href="/about" className="hover:text-blue-300">About us</Link></li>
-              <li><Link href="/careers" className="hover:text-blue-300">Careers</Link></li>
-              <li><Link href="/media-kit" className="hover:text-blue-300">Media kit</Link></li>
+              <li><Link href="/about" className="hover:text-blue-300">About</Link></li>
+              <li><Link href="/contact" className="hover:text-blue-300">Contact us</Link></li>
             </ul>
           </div>
         </div>
@@ -62,8 +60,7 @@ const Footer = () => {
               {/* Add more language options as needed */}
             </select>
             <Link href="/terms" className="hover:text-blue-300">Terms & privacy</Link>
-            <Link href="/security" className="hover:text-blue-300">Security</Link>
-            <Link href="/status" className="hover:text-blue-300">Status</Link>
+            
           </div>
 
           {/* Social Links */}

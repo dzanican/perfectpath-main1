@@ -2,7 +2,7 @@ import Image from 'next/image'
 import ATSImage from '../assets/Element.png'
 import PlaceholderImage from '../assets/hero-image-placeholder.png'
 
-const SkillGap = () => {
+function InterviewPractice() {
   return (
     <div className="bg-[#003366] text-white px-4 py-16">
       <div className="max-w-7xl mx-auto">
@@ -10,7 +10,7 @@ const SkillGap = () => {
           <div className="w-full md:w-1/2">
             <Image
               src={PlaceholderImage}
-              alt="Skill Gap Analysis visualization"
+              alt="AI interviewer visualization"
               width={500}
               height={500}
               className="w-full max-w-[600px] mx-auto"
@@ -19,9 +19,9 @@ const SkillGap = () => {
 
           <div className="flex flex-col gap-4 w-full md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl md:text-7xl font-bold">
-              Skill Gap{" "}
+              Interview{" "}
               <span className="relative z-10 inline-block">
-                Analysis
+                Practice
                 <Image
                   src={ATSImage}
                   alt=""
@@ -33,10 +33,10 @@ const SkillGap = () => {
               </span>
             </h1>
             <p className="text-lg">
-              Identify missing skills for desired roles and get custom tailored training resources.
+              Practice interviews with our AI interviewer. Get customized interview questions and answers basied on your career goals and experience.
             </p>
             <div className="flex justify-center md:justify-start">
-              <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md transition-colors w-fit mt-4">
+              <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-[8px] transition-colors w-fit mt-4">
                 Let&apos;s Go →
               </button>
             </div>
@@ -47,4 +47,4 @@ const SkillGap = () => {
   )
 }
 
-export default SkillGap
+export default InterviewPractice
