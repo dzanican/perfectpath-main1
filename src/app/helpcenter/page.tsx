@@ -4,7 +4,12 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 
-function AccordionItem({ question, answer }) {
+interface AccordionItemProps {
+  question: string;
+  answer: string;
+}
+
+function AccordionItem({ question, answer }: AccordionItemProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

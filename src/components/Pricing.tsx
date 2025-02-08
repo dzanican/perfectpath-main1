@@ -1,138 +1,141 @@
-import React from 'react';
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import React from 'react'
 
-const Pricing = () => {
+export default function Pricing() {
+  const features = [
+    { name: 'Resume Customizations', free: '2', team: '10', pro: 'Unlimited', enterprise: 'Unlimited' },
+    { name: 'Cover Letter Generation', free: '1', team: '5', pro: 'Unlimited', enterprise: 'Unlimited' },
+    { name: 'Career Compass', free: '✓', team: '✓', pro: '✓', enterprise: '✓' },
+    { name: 'Job Match Analysis', free: '-', team: '✓', pro: '✓', enterprise: '✓' },
+    { name: 'Career Path Planning', free: '-', team: '-', pro: '✓', enterprise: '✓' },
+    { name: 'Priority Support', free: '-', team: '-', pro: '✓', enterprise: '✓' },
+    { name: 'Priority Support', free: '-', team: '-', pro: '✓', enterprise: '✓' },
+    { name: 'Priority Support', free: '-', team: '-', pro: '✓', enterprise: '✓' },
+    { name: 'Priority Support', free: '-', team: '-', pro: '✓', enterprise: '✓' },
+    { name: 'Interview Practice', free: '-', team: '15 minutes', pro: '120 minutes', enterprise: 'Unlimited' }
+  ]
+
   return (
-    <div className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className="text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Choose Your Path to Success
-        </h2>
-      </div>
-
-      <div className="mt-12 space-y-8 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-6 lg:gap-8 lg:max-w-7xl lg:mx-auto px-4 lg:px-8">
-        {/* Free Tier */}
-        <div className="border-2 border-[#FFE492] rounded-2xl p-6 lg:p-8 h-full bg-white">
-          <div className="flex flex-col h-full">
-            <h3 className="text-2xl font-semibold text-[#043873]">Free</h3>
-            <p className="mt-5 text-3xl font-bold text-[#043873]">$0</p>
-            <p className="mt-3 text-[#043873] text-lg">Take a step in a new direction</p>
-            
-            <ul className="mt-10 space-y-5">
-              <li className="flex items-start">
-                <div className="flex-shrink-0">
-                  <IoMdCheckmarkCircleOutline className="h-5 w-5 text-[#043873] mt-1" />
-                </div>
-                <p className="ml-3 text-[#043873] text-lg">Get 3 new job descriptions based on your resume</p>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0">
-                  <IoMdCheckmarkCircleOutline className="h-5 w-5 text-[#043873] mt-1" />
-                </div>
-                <p className="ml-3 text-[#043873] text-lg">Skill Gap Analysis</p>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0">
-                  <IoMdCheckmarkCircleOutline className="h-5 w-5 text-[#043873] mt-1" />
-                </div>
-                <p className="ml-3 text-[#043873] text-lg">Resume ATS Score</p>
-              </li>
-            </ul>
-
-            <button className="mt-auto block w-full bg-[#043873] px-6 py-3 text-base font-medium text-white hover:bg-[#032b59] rounded-md">
-              Get Started
-            </button>
-          </div>
+    <section className="py-10 bg-white sm:py-16 lg:py-24">
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-black lg:text-5xl sm:text-5xl">Pricing & Plans</h2>
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
+            Choose the perfect plan to enhance your career journey with PerfectPath.
+          </p>
         </div>
 
-        {/* Standard Tier */}
-        <div className="border-0 rounded-lg p-6 lg:p-10 bg-[#002B5B] text-white relative z-10 md:transform md:scale-105 lg:scale-110 shadow-xl">
-          <div className="flex flex-col h-full">
-            <h3 className="text-2xl font-semibold text-[#FFE492]">Standard</h3>
-            <p className="mt-6 text-4xl font-bold text-[#FFE492]">$5.00</p>
-            <p className="mt-4 text-gray-200">For the serious job-seeker</p>
-            
-            <ul className="mt-12 space-y-6">
-              <li className="flex items-start">
-                <div className="flex-shrink-0">
-                  <IoMdCheckmarkCircleOutline className="h-5 w-5 text-yellow-500 mt-1" />
-                </div>
-                <p className="ml-3 text-gray-200 text-base">Everything in Free tier</p>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0">
-                  <IoMdCheckmarkCircleOutline className="h-5 w-5 text-yellow-500 mt-1" />
-                </div>
-                <p className="ml-3 text-gray-200 text-base">Resume + ATS Optimization</p>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0">
-                  <IoMdCheckmarkCircleOutline className="h-5 w-5 text-yellow-500 mt-1" />
-                </div>
-                <p className="ml-3 text-gray-200 text-base">Career Progression Map</p>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0">
-                  <IoMdCheckmarkCircleOutline className="h-5 w-5 text-yellow-500 mt-1" />
-                </div>
-                <p className="ml-3 text-gray-200 text-base">Cover Letter Generator</p>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0">
-                  <IoMdCheckmarkCircleOutline className="h-5 w-5 text-yellow-500 mt-1" />
-                </div>
-                <p className="ml-3 text-gray-200 text-base">120 minutes of AI interview coaching</p>
-              </li>
-            </ul>
+        {/* lg+ */}
+        <div className="hidden mt-16 lg:block">
+          <table className="w-full">
+            <thead>
+              <tr>
+                <th className="py-8 pr-4"></th>
 
-            <button className="block w-full bg-[#FFE492] px-6 py-2 text-base font-medium text-[#043873] hover:bg-[#FFE492] rounded-md mt-10">
-              Get Started
-            </button>
-          </div>
+                <th className="px-4 py-8 text-center">
+                  <span className="text-base font-medium text-blue-600">Free</span>
+                  <p className="mt-6 text-6xl font-bold">$0</p>
+                  <p className="mt-2 text-base font-normal text-gray-500">No CC required</p>
+                </th>
+
+                <th className="px-4 py-8 text-center">
+                  <span className="text-base font-medium text-blue-600">See whats out there</span>
+                  <p className="mt-6 text-6xl font-bold">$15</p>
+                  <p className="mt-2 text-base font-normal text-gray-500">1 month</p>
+                </th>
+
+                <th className="px-4 py-8 text-center bg-gray-900 rounded-t-xl">
+                  <span className="px-4 py-2 text-base font-medium text-white bg-blue-600 rounded-full">Popular</span>
+                  <p className="mt-6 text-6xl font-bold text-white">$25</p>
+                  <p className="mt-2 text-base font-normal text-gray-200">3 months</p>
+                </th>
+
+                <th className="px-4 py-8 text-center">
+                  <span className="text-base font-medium text-blue-600">Lifetime</span>
+                  <p className="mt-6 text-6xl font-bold">$150</p>
+                  <p className="mt-2 text-base font-normal text-gray-500">Once</p>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {features.map((feature, index) => (
+                <tr key={feature.name}>
+                  <td className="py-4 pr-4 font-medium border-b border-gray-200">{feature.name}</td>
+                  <td className="px-4 py-4 text-center border-b border-gray-200">{feature.free}</td>
+                  <td className="px-4 py-4 text-center border-b border-gray-200">{feature.team}</td>
+                  <td className="px-4 py-4 text-center text-white bg-gray-900 border-b border-white/20">{feature.pro}</td>
+                  <td className="px-4 py-4 text-center border-b border-gray-200">{feature.enterprise}</td>
+                </tr>
+              ))}
+
+              <tr>
+                <td className="py-6 pr-4"></td>
+                {['free', 'team', 'pro', 'enterprise'].map((tier, index) => (
+                  <td key={tier} className={`px-4 py-6 text-center ${tier === 'pro' ? 'bg-[#FFE492] rounded-b-xl text-black' : ''}`}>
+                    <a
+                      href="#"
+                      className={`inline-flex items-center font-semibold ${
+                        tier === 'pro' ? 'text-black' : 'text-blue-600 hover:text-blue-700'
+                      }`}
+                    >
+                      Get Started
+                      <svg className="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                  </td>
+                ))}
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        {/* Elite Tier */}
-        <div className="border-2 border-[#FFE492] rounded-2xl p-6 lg:p-8 h-full bg-white">
-          <div className="flex flex-col h-full">
-            <h3 className="text-2xl font-semibold text-[#043873]">Lifetime</h3>
-            <p className="mt-5 text-3xl font-bold text-[#043873]">$150.00</p>
-            <p className="mt-3 text-[#043873] text-lg">Lifetime access to all features</p>
-            
-            <ul className="mt-10 space-y-5">
-              <li className="flex items-start">
-                <div className="flex-shrink-0">
-                  <IoMdCheckmarkCircleOutline className="h-5 w-5 text-[#043873] mt-1" />
-                </div>
-                <p className="ml-3 text-[#043873] text-lg">Everything in Standard tier</p>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0">
-                  <IoMdCheckmarkCircleOutline className="h-5 w-5 text-[#043873] mt-1" />
-                </div>
-                <p className="ml-3 text-[#043873] text-lg">Upskilling Recommendations</p>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0">
-                  <IoMdCheckmarkCircleOutline className="h-5 w-5 text-[#043873] mt-1" />
-                </div>
-                <p className="ml-3 text-[#043873] text-lg">Personality & Culture Fit Analysis</p>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0">
-                  <IoMdCheckmarkCircleOutline className="h-5 w-5 text-[#043873] mt-1" />
-                </div>
-                <p className="ml-3 text-[#043873] text-lg">Unlimted AI interviewer sessions</p>
-              </li>
-            </ul>
+        {/* Mobile view */}
+        <div className="block mt-12 border-t border-b border-gray-200 divide-y divide-gray-200 lg:hidden">
+          <div className="grid grid-cols-4 text-center divide-x divide-gray-200">
+            {[
+              { name: 'Free', price: '$0' },
+              { name: 'Team', price: '$99' },
+              { name: 'Popular', price: '$150' },
+              { name: 'Enterprise', price: '$490' }
+            ].map((tier) => (
+              <div key={tier.name} className="px-2 py-2">
+                <span className="text-sm font-medium text-blue-600">{tier.name}</span>
+                <p className="mt-2 text-xl font-bold">{tier.price}</p>
+                <span className="mt-1 text-sm font-normal text-gray-500">Per month</span>
+              </div>
+            ))}
+          </div>
 
-            <button className="mt-auto block w-full bg-[#043873] px-6 py-3 text-base font-medium text-white hover:bg-[#032b59] rounded-md">
-              Get Started
-            </button>
+          {features.map((feature) => (
+            <React.Fragment key={feature.name}>
+              <div className="px-2 py-4 sm:px-4">
+                <p className="font-semibold">{feature.name}</p>
+              </div>
+              <div className="grid grid-cols-4 text-center divide-x divide-gray-200">
+                <div className="px-2 py-2">{feature.free}</div>
+                <div className="px-2 py-2">{feature.team}</div>
+                <div className="px-2 py-2">{feature.pro}</div>
+                <div className="px-2 py-2">{feature.enterprise}</div>
+              </div>
+            </React.Fragment>
+          ))}
+
+          <div className="grid grid-cols-4 text-center divide-x divide-gray-200">
+            {['Free', 'Team', 'Popular', 'Enterprise'].map((tier) => (
+              <div key={tier} className="px-1 py-2 sm:px-4">
+                <a
+                  href="#"
+                  className="flex items-center justify-center w-full px-1 py-2 mt-5 text-sm text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md hover:bg-blue-700"
+                  role="button"
+                >
+                  Get Started
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-    </div>
-  );
-};
-
-export default Pricing;
+    </section>
+  )
+}

@@ -19,23 +19,23 @@ const ATS = () => {
       {/* Right side - Make full width on mobile and center text */}
       <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
         <h1 className="text-4xl md:text-7xl font-bold text-gray-900">
-          ATS{" "}
+          Job{" "}
           <span className="relative z-10 inline-block">
-            Compatibility
+            Tailor
             <Image
               src={ATSImage}
               alt=""
-              width={200}
-              height={20}
+              width={300}
+              height={50}
               className="absolute -bottom-1 left-0 md:left-8 -z-10 w-full opacity-100"
             />
           </span>
           <br />
-          Check
+          
         </h1>
         <p className="text-gray-600 text-lg">
-          Ensure your resume passes automated screening systems
-          with our advanced ATS analysis tools. New resumes are automatically fromatted to meet the requirements of popular screening systems.
+        Boost your job prospects with PerfectPath’s AI-powered Resume Customizer. Simply paste your target job description and instantly receive a tailored resume and personalized cover letter designed to optimize your application for ATS and hiring managers. Enhance your interview chances and stand out in today’s competitive job market.
+
         </p>
         <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-[8px] transition-colors">
           Check Now

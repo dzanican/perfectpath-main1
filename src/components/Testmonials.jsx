@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Card } from '@/components/ui/card'
 
 const testimonials = [
@@ -30,17 +30,53 @@ const testimonials = [
     bgColor: "bg-blue-500",
     quoteColor: "text-white",
     textColor: "text-white"
+  },
+  {
+    text: "The AI-powered resume customization helped me land interviews at top tech companies.",
+    name: "Sarah Chen",
+    role: "Software Engineer",
+    image: "/Avater3.png",
+    bgColor: "bg-blue-500",
+    quoteColor: "text-white",
+    textColor: "text-white"
+  },
+  {
+    text: "The career compass feature showed me opportunities I hadn't even considered. Now I'm in my dream role!",
+    name: "Michael Rodriguez",
+    role: "Product Manager",
+    image: "/Avater4.png",
+    bgColor: "bg-blue-500",
+    quoteColor: "text-white",
+    textColor: "text-white"
+  },
+  {
+    text: "Using PerfectPath's cover letter generator saved me hours of work while making my applications more impactful.",
+    name: "Emily Thompson",
+    role: "Marketing Director",
+    image: "/Avater5.png",
+    bgColor: "bg-blue-500",
+    quoteColor: "text-white",
+    textColor: "text-white"
   }
 ]
 
 export default function TestimonialCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => 
+        prevSlide === testimonials.length - 1 ? 0 : prevSlide + 1
+      );
+    }, 1000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="py-8 sm:py-12 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12">
-        What Our Users <span className="relative">
-          Say
+        +1000 users have found their dream job with PerfectPath <span className="relative">
           <span className="absolute bottom-1 left-0 w-full h-2 sm:h-3 bg-yellow-300 -z-10"></span>
         </span>
       </h2>
@@ -56,7 +92,7 @@ export default function TestimonialCarousel() {
               <div
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`transition-all duration-300 ease-in-out cursor-pointer ${
+                className={`transition-all duration-500 ease-in-out cursor-pointer ${
                   isCenter ? 'w-full max-w-[90vw] sm:max-w-xl z-20 opacity-100 scale-100' :
                   (isPrev || isNext) ? 'hidden sm:block w-full max-w-[80vw] sm:max-w-md z-10 opacity-70 scale-90' :
                   'hidden'

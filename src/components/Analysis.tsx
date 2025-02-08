@@ -19,9 +19,9 @@ const Analysis = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="max-w-xl text-center md:text-left mx-auto md:mx-0">
             <h1 className="text-4xl md:text-7xl font-bold mb-4">
-              Experience
+              Career
               <span className="block relative">
-                Analysis
+                Compass
                 <Image
                   src={ATSImage}
                   alt=""
@@ -32,7 +32,8 @@ const Analysis = () => {
               </span>
             </h1>
             <p className="text-gray-600 mb-8">
-              Upload your resume to discover suitable job titles for your next career move
+            Discover your next career opportunity with PerfectPath’s AI Job Matcher. Upload your resume and let our advanced algorithm analyze your skills and experience to recommend tailored job opportunities that perfectly match your profile. 
+            Streamline your job search, explore new career paths, and boost your chances of landing your dream role.
             </p>
             <div className="flex justify-center md:justify-start">
               <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-[8px] flex items-center gap-2 transition-colors">

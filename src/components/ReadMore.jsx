@@ -25,7 +25,10 @@ const SkillGap = () => {
             <p className="text-lg text-center md:text-left lg:text-left">
               Identify missing skills for desired roles and get custom tailored training resources.
             </p>
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md transition-colors w-fit mt-4 mx-auto md:mx-0">
+            <button 
+              className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 transition-colors w-fit mt-4 mx-auto md:mx-0"
+              style={{ borderRadius: '8px' }}
+            >
               Read more →
             </button>
           </div>

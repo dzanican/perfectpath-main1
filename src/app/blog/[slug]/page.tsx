@@ -408,7 +408,7 @@ export default function ArticlePage() {
             </div>
           </div>
           <div className="prose max-w-none">
-            {article.content.split('\n').map((paragraph, index) => (
+            {article.content.split('\n').map((paragraph: string, index: number) => (
               <p key={index} className="mb-4">
                 {paragraph}
               </p>
